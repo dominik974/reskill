@@ -1,0 +1,58 @@
+Class SelfDrivingSystem:
+    // Virtual method declarations for movement, when a method is declared as virtual in a base class, it enables polymorphism, 
+    // which allows derived classes to override the function with their own implementation. 
+
+    Virtual Method goForward()
+        Output "Going forward."
+
+    Virtual Method goBackward()
+        Output "Going backwards."
+
+    Virtual Method turnLeft()
+        Output "Turning left."
+
+    Virtual Method turnRight()
+        Output "Turning right."
+End Class
+
+Class Car extends SelfDrivingSystem:
+    Method goForward()
+        Output "Pushing pedal down."
+
+    Method goBackward()
+        Output "Step on brake pedal."
+
+    Method turnLeft()
+        Output "Steering left."
+
+    Method turnRight()
+        Output "Steering right."
+End Class
+
+Class Train extends SelfDrivingSystem:
+    Method goForward()
+        Output "Moving throttle down."
+
+    Method goBackward()
+        Output "Moving throttle up."
+
+    Method turnLeft()
+        Raise logic_error with message "no such function."
+
+    Method turnRight()
+        Raise logic_error with message "no such function."
+End Class
+
+Function main():
+    Car z4roadster
+    Output "Car is"
+    z4roadster.goForward()
+    z4roadster.turnLeft()
+
+    Output "---------------"
+
+    Train ice
+    Output "Train is"
+    ice.goForward()
+    ice.turnLeft()
+End Function
