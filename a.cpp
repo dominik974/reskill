@@ -1,4 +1,4 @@
 int main()
 {
-    std void
+    std void()
 }
