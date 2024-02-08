@@ -1,6 +1,6 @@
 int main()
 {
-    std void
+    std void()
 }
 
 int func() {}
