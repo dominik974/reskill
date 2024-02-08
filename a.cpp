@@ -2,9 +2,6 @@
 
 int main()
 {
-    std void()
-}
-
-int func() {
-    std::cout << "andi rulez!\n";
+    std::cout << "hallo schmmidi";
+    return 0;
 }
