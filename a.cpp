@@ -1,6 +1,7 @@
+#include <iostream>
+
 int main()
 {
-    std void()
+    std::cout << "hallo schmmidi";
+    return 0;
 }
-
-int func() {}
